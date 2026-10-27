@@ -1,0 +1,55 @@
+/* ============================================================
+   reset.css — Modern CSS Reset
+   Based on Josh Comeau's reset (joshwcomeau.com/css/custom-css-reset)
+   Purpose: Remove browser inconsistencies so we start from a
+   clean, predictable baseline across all browsers.
+   ============================================================ */
+
+/* 1. Use border-box sizing everywhere.
+      This means padding and borders are included in an element's
+      width/height instead of being added on top. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding from everything */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set a sensible base line-height and allow text to wrap
+      naturally on long words (prevents horizontal overflow) */
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Images and media should never exceed their container width */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Form inputs should inherit font styles from their parent
+      (by default they use the browser's font, not yours) */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflow in headings */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Remove list styling from ul/ol with role="list"
+      (we'll add our own styles where needed) */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* 8. Remove default anchor styling — we'll define our own */
+a {
+  color: inherit;
+  text-decoration: none;
+}
